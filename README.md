@@ -7,7 +7,7 @@ For more general information on the front garden railway see here:
 
 https://www.meades.org/railways/garden/garden.html
 
-The main file is `big_round_button.blend`, the components of which are exported to a number of `big_round_button*.stl` files at a Blender scale factor of 1000 to give real size in millimetres. `_xY` on the end of an `stl` file name means you will need to print `Y` of those parts (e.g. 8 of `big_round_button_spring_support_x8.stl`).
+The main file is `big_round_button.blend`, the components of which are exported to a number of `big_round_button*.stl` files at a Blender scale factor of 1000 to give real size in millimetres. `_xY` on the end of an `stl` file name means you will need to print `Y` of those parts (e.g. six of `big_round_button_spring_support_x6.stl`).
 
 # Printing
 ## `big_round_button_button.stl`
@@ -28,4 +28,4 @@ Then I printed the button (`big_round_button_button.stl`) in SUNLU transparent w
 Note that PETG is not UV-safe, I don't believe there is a UV-safe transparent filament; the button will just need to be replaced every few years.
 
 ## Everything Else
-Everything else should be printed in ASA (for UV-safety), likely black in colour, fastest speed, 15% in fill, no supports required.  You might wish to use a brim on `big_round_button_housing.stl` to ensure it stays attached to the build plate.
+Everything else should be printed in ASA (for UV-safety), likely black in colour, fastest speed, 15% in fill, no supports required except for `big_round_button_back.stl`, which is a relatively complex shape.  You may need to use a brim on `big_round_button_housing.stl` to ensure it stays attached to the build plate.

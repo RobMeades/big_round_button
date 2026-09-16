@@ -20,12 +20,14 @@ The chief challenge with this print is getting the button to come out as transpa
 - set the layer height to 0.1&nbsp;mm (greatest detail, packing more filament in),
 - increase the filament flow rate to 5% greater than normal; this will compress the layers nice and hard,
 - set the fill type and the support interface layer type to concentric: this should match the shape of the button,
-- set the in-fill angle to 0 degrees; this should make the outer layers print as a horizontal/vertical grid,
+- set the in-fill angle to zero degrees; this should make the outer layers print as a horizontal/vertical grid,
 - enabled a safety feature in the slicer program to not have the nozzle cross perimeters, reducing the changes of it hitting anything.
 
-Then I printed the button (`big_round_button_button.stl`) in SUNLU transparent white PETG, supports required on the build plate.  The print will probably take around 2 or 3 days with these settings.
+Then I printed the button (`big_round_button_button.stl`) in SUNLU transparent white PETG, supports required on the build plate.  The print will probably take two or three days with these settings.
 
 Note that PETG is not UV-safe, I don't believe there is a UV-safe transparent filament; the button will just need to be replaced every few years.
 
 ## Everything Else
-Everything else should be printed in ASA (for UV-safety), likely black in colour, fastest speed, 15% in fill, no supports required except for `big_round_button_back.stl`, `big_round_button_usb_c_hole_cap.stl` and `big_round_button_mount*.stl`, which are relatively complex shapes.  You may need to use a brim on `big_round_button_housing.stl` to ensure it stays attached to the build plate.
+Everything else should be printed in ASA (for UV-safety), fastest speed, 15% in fill, no supports required except for `big_round_button_back.stl`, `big_round_button_usb_c_hole_cap.stl` and `big_round_button_mount*.stl`, which are relatively complex shapes and so should have supports everywhere.  You may need to use a brim on `big_round_button_housing.stl` to ensure it stays attached to the build plate.
+
+Probably best use black ASA aside from `big_round_button_led_plate.stl` and `big_round_button_back.stl` which are better printed in natural ASA for greater reflectivity.

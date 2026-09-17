@@ -28,6 +28,6 @@ Then I printed the button (`big_round_button_button.stl`) in SUNLU transparent w
 Note that PETG is not UV-safe, I don't believe there is a UV-safe transparent filament; the button will just need to be replaced every few years.
 
 ## Everything Else
-Everything else should be printed in ASA (for UV-safety), fastest speed, 15% in fill, no supports required except for `big_round_button_back.stl`, `big_round_button_usb_c_hole_cap.stl` and `big_round_button_mount*.stl`, which are relatively complex shapes and so should have supports everywhere.  You may need to use a brim on `big_round_button_housing.stl` to ensure it stays attached to the build plate.
+Everything else should be printed in ASA (for UV-safety), fastest speed (though you might print `big_round_button_housing.stl` at a higher resolution for prettiness), 15% in fill, no supports required except for `big_round_button_back.stl` and `big_round_button_usb_c_hole_cap.stl`, which are relatively complex shapes and so should have supports everywhere.  You may need to use a brim on `big_round_button_housing.stl` to ensure it stays attached to the build plate.
 
-Probably best use black ASA aside from `big_round_button_led_plate.stl` and `big_round_button_back.stl` which are better printed in natural ASA for greater reflectivity.
+Probably best use black ASA for `big_round_button_housing.stl` and natural ASA for the rest to improve reflectivity.

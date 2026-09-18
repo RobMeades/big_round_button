@@ -27,7 +27,14 @@ Then I printed the button (`big_round_button_button.stl`) in SUNLU transparent w
 
 Note that PETG is not UV-safe, I don't believe there is a UV-safe transparent filament; the button will just need to be replaced every few years.
 
-## Everything Else
-Everything else should be printed in ASA (for UV-safety), fastest speed (though you might print `big_round_button_housing.stl` at a higher resolution for prettiness), 15% in fill, no supports required except for `big_round_button_back.stl` and `big_round_button_usb_c_hole_cap.stl`, which are relatively complex shapes and so should have supports everywhere.  You may need to use a brim on `big_round_button_housing.stl` to ensure it stays attached to the build plate.
+## `big_round_button_housing.stl`
+When printed in \[black\] ASA, this part also presents a challenge.  Printing in PLA, once can plop the object down on its front face, no supports, jobs a good'un, however ASA just won't stick to the build plate that well.  Instead, what I did was to cut the object in half in my printer's slicer program right in the widest part of the sticky-out bit where `big_round_button_back.stl` rests inside the housing, placing the two halves down on the cut face.  This provides the largest surface area in contact with the build plate.  The print does, of course, require supports now, and the two parts will have to be (carefully!) glued together again afterwards with cyanoacrylate adhesive, but it does survive the printing process and the front curved portion is nice and rounded, rather then distorted through having been squidged to the build plate.
 
-Probably best use black ASA for `big_round_button_housing.stl` and natural ASA for the rest to improve reflectivity.
+![Cut position](./pictures_for_readme/housing_cut.png)
+
+I also printed this part at 0.1&nbsp;mm layer height to make that curve nice and continuous.
+
+Settings are otherwise the same as for everything else ASA (see below), though adding an \[internal, 'cos you might not have room for an external one\] brim is probably advisable.
+
+## Everything Else
+Everything else should be printed in natural ASA (for UV-safety, natural ASA for improved reflectivity), fastest speed, 15% in fill, no supports required except for `big_round_button_back.stl` and `big_round_button_usb_c_hole_cap.stl`, which are relatively complex shapes and so should have supports everywhere.  As with all of the larger/flatter parts I got the room up to 45&nbsp;C with a space heater (my printer is inside a large wooden box but has no direct heating), got my slicer program to add a draft excluder (where room was available), minimised the fan and reduced the speed to 40&nbsp;mm/s max.
